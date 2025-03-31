@@ -152,7 +152,7 @@ export class Settings {
         game.settings.register(this.NAMESPACE, this.CRAFTING_APP_WIDTH, {
             scope: "user",
             config: false,
-            default: 900,
+            default: 930,
             type: Number,
         });
         game.settings.register(this.NAMESPACE, this.CRAFTING_APP_HEIGHT, {
