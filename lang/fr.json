@@ -1,0 +1,150 @@
+{
+  "beaversCrafting": {
+    "actorLink": "Recettes",
+    "actorSheet": {
+      "tab": "Artisanat",
+      "table": {
+        "name": "Nom",
+        "status": "Statut",
+        "progress": "Progression",
+        "add": "Ajouter"
+      }
+    },
+    "inventory": {
+      "type": "Type",
+      "title": "Inventaire"
+    },
+    "recipe": {
+      "ingredients": "Ingrédients",
+      "quantity": "Quantité",
+      "skills": "Compétences",
+      "beaversTests": {
+        "tests": "Tests",
+        "test": "Test",
+        "hits": "Réussites",
+        "hitsHint": "Nombre de réussites nécessaires avant que ce test soit réussi",
+        "fails": "Échecs",
+        "failsHint": "Nombre d'échecs avant que le processus échoue",
+        "dc": "DD",
+        "consume": "Consommer",
+        "consumeHint": "Consommer les ingrédients en cas d'échec",
+        "andTestHint": "Ajouter un test supplémentaire",
+        "orTestHint": "Ajouter un test alternatif",
+        "skill":"Compétence :",
+        "ability": "Caractéristiques :"
+      },
+      "tools": "Outils",
+      "dc": "DD",
+      "results": "Résultats",
+      "dropItem": "Déposer objet",
+      "addItem" : "Ajouter objet",
+      "orItem": "Ou autre objet",
+      "currency": "Coût",
+      "consumeOnFailedSaveHint": "Consomme le coût en cas d'échec du test de compétence",
+      "attendants": "Attendants",
+      "macro": {
+        "button": "Sauvegarder"
+      },
+      "folder": "Dossier",
+      "folderHint": "Vous pouvez créer un sous-dossier en séparant les mots avec '.' ex. Dossier.Sous-dossier",
+      "folderPlaceHolder":"Dossier.Sous-dossier"
+    },
+    "anyOf": {
+      "dropItem": "Déposer objet",
+      "button": "Tester objet",
+      "error": "an 'anyOf' macro produced an error. See console (F12)"
+    },
+    "component": {
+      "warning": "L'acteur que vous contrpôlez n'a pas d'objet nommé "
+    },
+    "select-dialog": {
+      "title": "Choisissez",
+      "preselection": "Choisissez"
+    },
+    "crafting-app": {
+      "title": "Beaver's Recipe Compendium",
+      "button": "Démarrer",
+      "errors": {
+        "tableNotFound": "RollTable not found for : ",
+        "tableNotValid": "RollTable return invalid Object : ",
+        "itemNotFound": "Item not found in RollTable for :"
+      },
+      "cost": "Coût",
+      "instruction": "Instructions",
+      "required": "Pré-requis",
+      "result": "Résultat",
+      "pass": "Réussir",
+      "before": "avant",
+      "fails": "échecs",
+      "checks": "Étapes"
+    },
+    "settings": {
+      "moduleButton": {
+        "name": "Configure module",
+        "hint": "Configure Module e.g. setup item sub types 'Recipe' and 'AnyOf'.",
+        "label": "setup"
+      },
+      "createItemTitle": {
+        "name": "Title of Item Creation Dialog Window",
+        "hint": "This Title is needed to detect the Item Creation Dialog to add 'Recipe' and 'AnyOf' Subtype."
+      },
+      "captureCreateItemTitle": {
+        "name": "Capture Create Item Dialog Window",
+        "hint": "This will enable a bullseye in each dialog header to identify the create Item dialog window.",
+        "hint2": "When you click on it, it will set that window as your item creation window after reopen it."
+      },
+      "displayResults": {
+        "name": "Display result sheet",
+        "hint": "Show ItemSheet when clicking on result items of a recipe."
+      },
+      "displayIngredients": {
+        "name": "Display ingredient sheet",
+        "hint": "Show ItemSheet when clicking on ingredient items of a recipe."
+      },
+      "draggableChatResult": {
+        "name": "Draggable chat result",
+        "hint": "You can drag recipe results from chat to other players inventory"
+      },
+      "useAttendants": {
+        "name": "Recipes use required Items",
+        "hint": "A Recipe can require to have items present on actor that does not get consumed in the process. You can setUp anything your system models as item e.g. for dnd5e feats, class, background, tools etc!"
+      },
+      "currencyExchange": {
+        "name": "Exchange currencies",
+        "hint": "if disabled you need to possess the exact currency in order to pay the recipe cost"
+      },
+      "disabledActor": {
+        "name": "Disabled Actors",
+        "hint": "Comma separated list of actor types that will not have an actor tab"
+      },
+      "tabName": {
+        "name": "TabName",
+        "hint": "Customize Tab name on actor sheets (default: Crafting). Some Systems uses a TabName rather a TabIcon. Why? This module was initially based on crafting but you can use it for various other thing like: Tech Trees, Quest Progress, Downtime Activities"
+      },
+      "tabIcon": {
+        "name": "TabIcon",
+        "hint": "Customize Tab icon on actor sheets (default: A Recipe). Some Systems uses a TabIcon rather a TabName. You can change it to any fontawesome icon that foundry supports"
+      },
+      "addHeaderLink": {
+        "name": "ActorSheetLink",
+        "hint": "This will add a recipe link on the ActorSheet. Optional since 2.0.x as too many modules polute the Header area of sheets, in some worlds i have problems to find a blank space to drag."
+      },
+      "timeToCraft": {
+        "name": "TimeToProcess",
+        "hint": "TimeToProcess is used to track the time a process needed. Instantly will not use any time and will instantly finish the process. Interaction will process when the user interacts with the process.",
+        "choices": {
+          "instantly": "instantly",
+          "interaction": "interaction"
+        }
+      },
+      "separateItems": {
+        "name": "Separate produced Items",
+        "hint": "Here you can set if a produced item is different then non produced. When set to full your produced items are different to unproduced once (e.g. you can create special recipes that require produced items). Partial will try to detect what you mean but will and can not always be correct (e.g. when you drag a produced dagger into your recipe it requires a produced dagger when you drag a normal dagger it can use a produced or non produced dagger)."
+      }
+    },
+    "module-config": {
+      "title": "Module Config",
+      "info": "The module need to detect the window that creates new Items. For this it uses internally the title of that window. If you have the default language the title is most likely 'Create New Item' and you need nothing to do."
+    }
+  }
+}
