@@ -8,14 +8,14 @@ export class RecipeCompendium {
     static getForActor(actor): Recipe[] {
         // @ts-ignore
         return actor.items
-            .filter(item => Recipe.isRecipe(item) && item.testUserPermission(game.user, CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER))
+            .filter(item => Recipe.isRecipe(item)/*  && item.testUserPermission(game.user, CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER) */)
             .map(item => Recipe.fromItem(item));
     }
 
     static getAllItems(): Recipe[] {
         // @ts-ignore
         return game.items
-            .filter(item => Recipe.isRecipe(item) && item.testUserPermission(game.user, CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER))
+            .filter(item => Recipe.isRecipe(item)/*  && item.testUserPermission(game.user, CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER) */)
             .map(item => Recipe.fromItem(item));
     }
 
