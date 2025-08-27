@@ -2,7 +2,7 @@
   "beaversCrafting": {
     "actorLink": "Recettes",
     "actorSheet": {
-      "tab": "Artisanat",
+      "tab": "Fabrication",
       "table": {
         "name": "Nom",
         "status": "Statut",
@@ -17,134 +17,134 @@
     "recipe": {
       "ingredients": "Ingrédients",
       "quantity": "Quantité",
-      "skills": "Compétences",
+      "skills": "Compétence",
       "beaversTests": {
         "tests": "Tests",
-        "test": "Test",
-        "hits": "Réussites",
-        "hitsHint": "Nombre de réussites nécessaires avant que ce test soit réussi",
-        "fails": "Échecs",
-        "failsHint": "Nombre d'échecs avant que le processus échoue",
-        "dc": "DD",
-        "consume": "Consommer",
-        "consumeHint": "Consommer les ingrédients en cas d'échec",
-        "andTestHint": "Ajouter un test supplémentaire",
-        "orTestHint": "Ajouter un test alternatif",
-        "skill":"Compétence :",
-        "ability": "Caractéristiques :"
+        "test": "test",
+        "hits": "réussites",
+        "hitsHint": "nombre de réussites nécessaires avant que ce test soit considéré comme réussi",
+        "fails": "échecs",
+        "failsHint": "nombre d’échecs avant que le processus échoue",
+        "dc": "dd",
+        "consume": "consommer",
+        "consumeHint": "consomme le coût en cas d’échecs",
+        "andTestHint": "ajouter un test supplémentaire",
+        "orTestHint": "ajouter un test alternatif",
+        "skill": "Compétence :",
+        "ability": "Aptitude :"
       },
-      "tools": "Outils",
+      "tools": "Outil",
       "dc": "DD",
       "results": "Résultats",
-      "dropItem": "Déposer objet",
-      "addItem" : "Ajouter objet",
-      "orItem": "Ou autre objet",
+      "dropItem": "déposer l’objet",
+      "addItem": "ajouter un objet",
+      "orItem": "ou objet",
       "currency": "Coût",
-      "consumeOnFailedSaveHint": "Consomme le coût en cas d'échec du test de compétence",
-      "attendants": "Attendants",
+      "consumeOnFailedSaveHint": "Consomme le coût en cas d’échec de la compétence",
+      "attendants": "Assistants",
       "macro": {
-        "button": "Sauvegarder"
+        "button": "sauvegarder"
       },
       "folder": "Dossier",
-      "folderHint": "Vous pouvez créer un sous-dossier en séparant les mots avec '.' ex. Dossier.Sous-dossier",
-      "folderPlaceHolder":"Dossier.Sous-dossier"
+      "folderHint": "Vous pouvez créer des sous-dossiers en séparant les mots par des points, ex. : Dossier.SousDossier",
+      "folderPlaceHolder": "Dossier.SousDossier"
     },
     "anyOf": {
-      "dropItem": "Déposer objet",
-      "button": "Tester objet",
-      "error": "an 'anyOf' macro produced an error. See console (F12)"
+      "dropItem": "déposer l’objet",
+      "button": "tester l’objet",
+      "error": "une macro 'anyOf' a produit une erreur. Vérifiez la console (F12)"
     },
     "component": {
-      "warning": "L'acteur que vous contrpôlez n'a pas d'objet nommé "
+      "warning": "Votre acteur contrôlé ne possède pas d’objet nommé "
     },
     "select-dialog": {
-      "title": "Choisissez",
-      "preselection": "Choisissez"
+      "title": "Choisir",
+      "preselection": "sélection"
     },
     "crafting-app": {
-      "title": "Beaver's Recipe Compendium",
+      "title": "Recueil de Recettes du Castor",
       "button": "Démarrer",
       "errors": {
-        "tableNotFound": "RollTable not found for : ",
-        "tableNotValid": "RollTable return invalid Object : ",
-        "itemNotFound": "Item not found in RollTable for :"
+        "tableNotFound": "Table de jet non trouvée pour : ",
+        "tableNotValid": "La table de jet a renvoyé un objet invalide : ",
+        "itemNotFound": "Objet introuvable dans la table de jet pour : "
       },
       "cost": "Coût",
-      "instruction": "Instructions",
-      "required": "Pré-requis",
+      "instruction": "Instruction",
+      "required": "Requis",
       "result": "Résultat",
-      "pass": "Réussir",
+      "pass": "succès",
       "before": "avant",
       "fails": "échecs",
-      "checks": "Étapes"
+      "checks": "Liste de vérification"
     },
     "settings": {
       "moduleButton": {
-        "name": "Configure module",
-        "hint": "Configure Module e.g. setup item sub types 'Recipe' and 'AnyOf'.",
-        "label": "setup"
+        "name": "Configurer le module",
+        "hint": "Configurer le module, ex. : configurer les sous-types d’objets 'Recipe' et 'AnyOf'.",
+        "label": "configurer"
       },
       "createItemTitle": {
-        "name": "Title of Item Creation Dialog Window",
-        "hint": "This Title is needed to detect the Item Creation Dialog to add 'Recipe' and 'AnyOf' Subtype."
+        "name": "Titre de la fenêtre de création d’objet",
+        "hint": "Ce titre est nécessaire pour détecter la fenêtre de création d’objet afin d’ajouter les sous-types 'Recipe' et 'AnyOf'."
       },
       "captureCreateItemTitle": {
-        "name": "Capture Create Item Dialog Window",
-        "hint": "This will enable a bullseye in each dialog header to identify the create Item dialog window.",
-        "hint2": "When you click on it, it will set that window as your item creation window after reopen it."
+        "name": "Capturer la fenêtre de création d’objet",
+        "hint": "Cela activera une cible dans l’en-tête de chaque dialogue pour identifier la fenêtre de création d’objet.",
+        "hint2": "Lorsque vous cliquez dessus, cela définira cette fenêtre comme votre fenêtre de création d’objet après l’avoir rouverte."
       },
       "displayResults": {
-        "name": "Display result sheet",
-        "hint": "Show ItemSheet when clicking on result items of a recipe."
+        "name": "Afficher la fiche de résultats",
+        "hint": "Afficher la fiche d’objet en cliquant sur les objets résultats d’une recette."
       },
       "displayIngredients": {
-        "name": "Display ingredient sheet",
-        "hint": "Show ItemSheet when clicking on ingredient items of a recipe."
+        "name": "Afficher la fiche d’ingrédients",
+        "hint": "Afficher la fiche d’objet en cliquant sur les objets ingrédients d’une recette."
       },
       "draggableChatResult": {
-        "name": "Draggable chat result",
-        "hint": "You can drag recipe results from chat to other players inventory"
+        "name": "Résultat déplaçable dans le chat",
+        "hint": "Vous pouvez glisser les résultats de recettes du chat vers l’inventaire d’autres joueurs"
       },
       "useAttendants": {
-        "name": "Recipes use required Items",
-        "hint": "A Recipe can require to have items present on actor that does not get consumed in the process. You can setUp anything your system models as item e.g. for dnd5e feats, class, background, tools etc!"
+        "name": "Les recettes utilisent des objets requis",
+        "hint": "Une recette peut exiger que des objets soient présents sur l’acteur sans être consommés. Vous pouvez configurer tout ce que votre système considère comme un objet, ex. : dons de dnd5e, classe, historique, outils, etc."
       },
       "currencyExchange": {
-        "name": "Exchange currencies",
-        "hint": "if disabled you need to possess the exact currency in order to pay the recipe cost"
+        "name": "Échanger des pièces",
+        "hint": "si désactivé, vous devez posséder exactement la monnaie requise pour payer le coût de la recette"
       },
       "disabledActor": {
-        "name": "Disabled Actors",
-        "hint": "Comma separated list of actor types that will not have an actor tab"
+        "name": "Acteurs désactivés",
+        "hint": "Liste séparée par des virgules des types d’acteurs qui n’auront pas d’onglet dédié"
       },
       "tabName": {
-        "name": "TabName",
-        "hint": "Customize Tab name on actor sheets (default: Crafting). Some Systems uses a TabName rather a TabIcon. Why? This module was initially based on crafting but you can use it for various other thing like: Tech Trees, Quest Progress, Downtime Activities"
+        "name": "Nom de l’onglet",
+        "hint": "Personnaliser le nom de l’onglet dans les fiches d’acteur (par défaut : Fabrication). Certains systèmes utilisent un nom d’onglet au lieu d’une icône. Ce module peut aussi servir à d’autres choses : arbre technologique, progression de quête, activités de temps libre"
       },
       "tabIcon": {
-        "name": "TabIcon",
-        "hint": "Customize Tab icon on actor sheets (default: A Recipe). Some Systems uses a TabIcon rather a TabName. You can change it to any fontawesome icon that foundry supports"
+        "name": "Icône de l’onglet",
+        "hint": "Personnaliser l’icône de l’onglet dans les fiches d’acteur (par défaut : une recette). Vous pouvez le changer pour n’importe quelle icône compatible avec Foundry"
       },
       "addHeaderLink": {
-        "name": "ActorSheetLink",
-        "hint": "This will add a recipe link on the ActorSheet. Optional since 2.0.x as too many modules polute the Header area of sheets, in some worlds i have problems to find a blank space to drag."
+        "name": "Lien vers la fiche d’acteur",
+        "hint": "Ajoute un lien vers les recettes dans la fiche d’acteur. Optionnel depuis la version 2.0.x, car de nombreux modules encombrent l’en-tête des fiches"
       },
       "timeToCraft": {
-        "name": "TimeToProcess",
-        "hint": "TimeToProcess is used to track the time a process needed. Instantly will not use any time and will instantly finish the process. Interaction will process when the user interacts with the process.",
+        "name": "Temps de fabrication",
+        "hint": "Le temps de fabrication sert à suivre la durée nécessaire au processus. Instantané ne prend aucun temps. Interaction nécessite une action de l’utilisateur.",
         "choices": {
-          "instantly": "instantly",
+          "instantly": "instantané",
           "interaction": "interaction"
         }
       },
       "separateItems": {
-        "name": "Separate produced Items",
-        "hint": "Here you can set if a produced item is different then non produced. When set to full your produced items are different to unproduced once (e.g. you can create special recipes that require produced items). Partial will try to detect what you mean but will and can not always be correct (e.g. when you drag a produced dagger into your recipe it requires a produced dagger when you drag a normal dagger it can use a produced or non produced dagger)."
+        "name": "Séparer les objets fabriqués",
+        "hint": "Définit si un objet fabriqué est différent d’un objet non fabriqué. En mode complet, les objets fabriqués sont distincts (ex. : recettes spéciales). En mode partiel, le système tente de deviner, mais peut se tromper."
       }
     },
     "module-config": {
-      "title": "Module Config",
-      "info": "The module need to detect the window that creates new Items. For this it uses internally the title of that window. If you have the default language the title is most likely 'Create New Item' and you need nothing to do."
+      "title": "Configuration du module",
+      "info": "Le module doit détecter la fenêtre de création d’objet. Pour cela, il utilise le titre de cette fenêtre. Si vous utilisez la langue par défaut, le titre est probablement 'Créer un nouvel objet' et vous n’avez rien à faire."
     }
   }
 }
